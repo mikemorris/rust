@@ -216,9 +216,8 @@ jobs:
 - job: Windows
   timeoutInMinutes: 600
   pool:
-    name: 'Default'
-    demands:
-    - agent.os -equals Windows_NT
+    name: Default
+    demands: agent.os -equals Windows_NT
   steps:
   - template: steps/run.yml
   strategy:
