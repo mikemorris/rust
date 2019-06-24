@@ -4,7 +4,7 @@
 
 pr: none
 trigger:
-  - auto
+  - master
 
 # variables:
 # - group: prod-credentials
