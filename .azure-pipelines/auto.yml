@@ -216,7 +216,9 @@ jobs:
 - job: Windows
   timeoutInMinutes: 600
   pool:
-    vmImage: 'vs2017-win2016'
+    name: 'Default'
+    demands:
+    - agent.os -equals Windows_NT
   steps:
   - template: steps/run.yml
   strategy:
