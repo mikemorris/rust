@@ -13,6 +13,7 @@ steps:
 
 - bash: printenv | sort
   displayName: Show environment variables
+  condition: and(succeeded(), ne(variables['Agent.OS'], 'Windows_NT'))
 
 - bash: |
     set -e
