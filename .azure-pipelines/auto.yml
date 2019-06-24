@@ -6,8 +6,8 @@ pr: none
 trigger:
   - auto
 
-variables:
-- group: prod-credentials
+# variables:
+# - group: prod-credentials
 
 jobs:
 - job: Linux
